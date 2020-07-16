@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Club Website</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#members">Member Login</a></li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+
+    <div class="container-top" id="home">
+        <img class="hero-home" src="images/undraw_book_lover_mkck.svg" alt="Photo of open books.">
+        <h1>BETWEEN <br>THE<br> <span style="color: #1A1423; text-decoration: underline; ">LINES</span></h1> <br>
+        <div class="quote">
+            <q>The world belongs to those who read.</q>
+            <button class="btn" type="button">JOIN THE CLUB</button></div>
+    </div>
+
+    <div id="about">
+        <h2>OUR STORY</h2>
+        <p>Book Club opened in July 2020 and serves as a community hub of the Upper West Side: a new kind of independent bookstore featuring top-notch coffee, wine, and gin. This spirited and dynamic neighborhood is reflected in the store: from the cozy
+            living room-feel decor, to curated book inventory, locally roasted coffee, and NY state wine. Come hang out with us!</p>
+        <img class="aboutimg" src="images/about.svg" alt="book illustration">
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <q>Reading is essential for those who seek to rise above the ordinary.</q>
+            <p class="author">- Jim Rohn</p>
+        </div>
+
+        <div class="mySlides">
+            <q>The reading of all good books is like conversation with the finest (people) of the past centuries.</q>
+            <p class="author">- Descartes</p>
+        </div>
+
+        <div class="mySlides">
+            <q>The more that you read, the more things you will know. The more that you learn, the more places you’ll go.</q>
+            <p class="author">- Dr. Seuss</p>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div id="events">
+        <h2>Events</h2>
+        <div class="row">
+            <div class="column">
+                <h3>Book</h2>
+                    <img class="cover" src="images/redqueen.jpg" alt="Red Queen book cover by Victoria Aveyard">
+            </div>
+            <div class="column">
+                <h3 style="text-align: left">Info</h3>
+                <p style="left: 25%; padding-top: 1%;"><strong><em>Red Queen</em></strong><br>Victoria Aveyard is the #1 New York Times bestselling author of Red Queen and Glass Sword. Victoria was born and raised in East Longmeadow, Massachusetts, a small town known only for the worst traffic
+                    rotary in the continental United States. She moved to Los Angeles to earn a BFA in screenwriting at USC. She currently splits her time between the East and West coasts. As an author and screenwriter, she uses her career as an excluse
+                    to read too many books and watch too many movies.
+                </p>
+            </div>
+            <div class="column">
+                <img class="cover" src="images/magicforliers.jpg" alt="Magic for Liars book by Sarah Gailey">
+            </div>
+            <div class="column">
+                <p style="left: 25%; padding-top: 1%;"> <strong><em>Magic for Liars</em></strong><br>SARAH GAILEY came onto the scene in 2015 and has since become one of the sharpest, funniest voices in pop culture online. They are a regular contributor for multiple websites, including Tor.com.
+                    Their nonfiction has appeared in Mashable and The Boston Globe, and their fiction has been published internationally. They are the author of River of Teeth and Taste of Marrow. They live lives in Los Angeles, California.
+                </p>
+            </div>
+            <div class="column">
+                <img class="cover" src="images/mexicandaughter.jpg" alt="I'm Not Your Perfect Mexican Daughter book by Erika L. Sanchez">
+            </div>
+            <div class="column">
+                <p style="left: 25%; padding-top: 1%;"> <strong><em>I'm Not Your Perfect Mexican Daughter</em></strong><br>SARAH GAILEY came onto the scene in 2015 and has since become one of the sharpest, funniest voices in pop culture online. They are a regular contributor for multiple websites,
+                    including Tor.com. Their nonfiction has appeared in Mashable and The Boston Globe, and their fiction has been published internationally. They are the author of River of Teeth and Taste of Marrow. They live lives in Los Angeles, California.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
