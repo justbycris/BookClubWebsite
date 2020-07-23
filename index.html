@@ -11,7 +11,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#members">Member Login</a></li>
+            <li><a href="#members">Members</a></li>
         </ul>
     </nav>
 </head>
@@ -60,41 +60,45 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+    <h2>EVENTS</h2>
+    <div class="container">
+        <table>
+            <thead>
+                <tr class="row">
+                    <th style="text-align: left;">Book</th>
+                    <th>Author</th>
+                    <th>Event</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/redqueen.jpg" class="bookcover"></td>
+                    <td class="book-author">Victoria Aveyard</td>
+                    <td class="info">This event is free and open to the public. To join the signing line and have any books signed at this event, you must purchase a copy of either King's Cage or Rise of Fire from Parnassus Books, either in-store, over the phone, or online.
+                        Your purchase will include a ticket that will admit you into the signing line at the event. By purchasing a book from Parnassus, you are not only supporting a locally owned, independent business, but you are also showing publishers
+                        that they should continue sending authors to Parnassus. Think about it this way: You wouldn't bring your own biscuits to the Loveless Cafe, would you?</td>
+                </tr>
+                <tr>
+                    <td><img src="images/magicforliers.jpg" class="bookcover"></td>
+                    <td class="book-author"> Sarah Gailey</td>
+                    <td class="info">When a gruesome murder is discovered at The Osthorne Academy of Young Mages, where her estranged twin sister teaches Theoretical Magic, reluctant detective Ivy Gamble is pulled into the world of untold power and dangerous secrets.
+                        She will have to find a murderer and reclaim her sister—without losing herself.</td>
+                </tr>
+                <tr>
+                    <td><img src="images/mexicandaughter.jpg" class="bookcover"></td>
+                    <td class="book-author">Erika L. Sanchez</td>
+                    <td class="info">The Absolutely True Diary of a Part-Time Indian meets Jane the Virgin in this poignant but often laugh-out-loud funny contemporary YA about losing a sister and finding yourself amid the pressures, expectations, and stereotypes of growing
+                        up in a Mexican American home.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="membership" id="members">
+            <div class="quote"></div>
+            <h2>Become a Member!</h2>
 
-    <div id="events">
-        <h2>Events</h2>
-        <div class="row">
-            <div class="column">
-                <h3>Book</h2>
-                    <img class="cover" src="images/redqueen.jpg" alt="Red Queen book cover by Victoria Aveyard">
-            </div>
-            <div class="column">
-                <h3 style="text-align: left">Info</h3>
-                <p style="left: 25%; padding-top: 1%;"><strong><em>Red Queen</em></strong><br>Victoria Aveyard is the #1 New York Times bestselling author of Red Queen and Glass Sword. Victoria was born and raised in East Longmeadow, Massachusetts, a small town known only for the worst traffic
-                    rotary in the continental United States. She moved to Los Angeles to earn a BFA in screenwriting at USC. She currently splits her time between the East and West coasts. As an author and screenwriter, she uses her career as an excluse
-                    to read too many books and watch too many movies.
-                </p>
-            </div>
-            <div class="column">
-                <img class="cover" src="images/magicforliers.jpg" alt="Magic for Liars book by Sarah Gailey">
-            </div>
-            <div class="column">
-                <p style="left: 25%; padding-top: 1%;"> <strong><em>Magic for Liars</em></strong><br>SARAH GAILEY came onto the scene in 2015 and has since become one of the sharpest, funniest voices in pop culture online. They are a regular contributor for multiple websites, including Tor.com.
-                    Their nonfiction has appeared in Mashable and The Boston Globe, and their fiction has been published internationally. They are the author of River of Teeth and Taste of Marrow. They live lives in Los Angeles, California.
-                </p>
-            </div>
-            <div class="column">
-                <img class="cover" src="images/mexicandaughter.jpg" alt="I'm Not Your Perfect Mexican Daughter book by Erika L. Sanchez">
-            </div>
-            <div class="column">
-                <p style="left: 25%; padding-top: 1%;"> <strong><em>I'm Not Your Perfect Mexican Daughter</em></strong><br>SARAH GAILEY came onto the scene in 2015 and has since become one of the sharpest, funniest voices in pop culture online. They are a regular contributor for multiple websites,
-                    including Tor.com. Their nonfiction has appeared in Mashable and The Boston Globe, and their fiction has been published internationally. They are the author of River of Teeth and Taste of Marrow. They live lives in Los Angeles, California.
-                </p>
-            </div>
         </div>
-    </div>
-
-    <script src="app.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
