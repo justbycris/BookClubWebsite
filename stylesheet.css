@@ -7,6 +7,7 @@ body,
 html {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -15,11 +16,11 @@ html {
 .navbar {
     position: fixed;
     display: inline-block;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     background-color: #1A1423;
     list-style-type: none;
-    z-index: 10;
+    z-index: 5;
 }
 
 .navbar li {
@@ -46,35 +47,31 @@ html {
 /*-----------------TOP---------------*/
 
 .container-top {
-    width: 100%;
-    height: 10%;
+    width: 100vw;
+    height: auto;
 }
 
 .hero-home {
-    position: flex;
-    width: 35%;
-    margin: 13% 5%;
+    float: left;
+    width: 40%;
     height: auto;
-    overflow: hidden;
+    top: 40%;
+    margin: 11rem 0 6rem 10rem;
 }
 
 h1 {
-    position: absolute;
-    top: 4%;
-    left: 57%;
-    background-color: #EF626C;
-    font-size: 4em;
+    font-size: 4.3em;
     font-weight: 800;
-    color: #ffffff;
+    color: #1e1e1e;
     text-align: right;
-    padding: 2em 1.3em;
-    margin: 2em 2em 1em 0;
-    display: block;
-    border-radius: 50%;
+    padding: 15rem 15rem 7rem 0;
 }
 
 q {
+    position: relative;
     display: block;
+    width: 100%;
+    margin-top: 1rem;
     font-size: 2em;
     color: #ffffff;
     font-style: italic;
@@ -82,17 +79,15 @@ q {
 }
 
 .quote {
-    position: relative;
-    height: 100vwpx;
-    width: auto;
-    padding-top: 3%;
-    padding-bottom: 7%;
+    clear: both;
+    height: auto;
+    width: 100%;
+    padding: 3% 0 5% 0;
     background-color: #1A1423;
 }
 
 .btn {
-    display: inline-block;
-    position: absolute;
+    position: relative;
     left: 45%;
     background-color: #6C63FF;
     color: #ffffff;
@@ -103,6 +98,7 @@ q {
     padding: .5rem 1rem;
     margin-top: 2rem;
     text-align: center;
+    cursor: pointer;
 }
 
 
@@ -137,7 +133,7 @@ p {
     height: auto;
     left: 30%;
     top: 200%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 
@@ -239,12 +235,11 @@ p {
 .container {
     width: 100%;
     height: auto;
-    margin: 0 auto;
 }
 
 table {
     text-align: left;
-    margin: 20px auto;
+    margin: 5rem 10rem;
 }
 
 .bookcover {
@@ -252,6 +247,7 @@ table {
     height: auto;
     padding: 20% 2%;
     left: 30%;
+    margin: 5% 5%;
 }
 
 .book-author {
@@ -265,10 +261,12 @@ th {
     text-decoration: underline #EF626C;
     color: #1e1e1e;
     text-align: center;
+    padding-left: 5%;
 }
 
 td {
-    width: 300px;
+    width: 100px;
+    padding: 3rem 2rem;
 }
 
 .info {
@@ -277,24 +275,74 @@ td {
 }
 
 
+/*---------------------------BECOME A MEMBER---------------------------*/
+
+.membership {
+    position: relative;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+form {
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    margin: 2rem 0 6rem 0;
+    text-align: center;
+    line-height: 2em;
+    width: 60%;
+    background-color: #6C63FF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    color: #1A1423;
+}
+
+.form-info {
+    padding: 2rem 1rem;
+    margin: 1rem 1rem;
+    background-color: #EF626C;
+}
+
+#submit-btn {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #6C63FF;
+    border-radius: 5%;
+    border: 4px solid #6C63FF;
+    padding: .2em 2em;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+
 /*----------------------------Media Queries-----------------------------*/
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) {}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    h1 {
+        font-size: 3.5rem;
+        left: 150px;
+    }
+    .hero-home {
+        display: none;
+    }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 769px) and (max-width: 1024) {}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
