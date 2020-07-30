@@ -11,7 +11,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#members">Members</a></li>
+            <li><a href="#members">Member Login</a></li>
         </ul>
     </nav>
 </head>
@@ -20,13 +20,14 @@
 
     <div class="container-top" id="home">
         <img class="hero-home" src="images/undraw_book_lover_mkck.svg" alt="Photo of open books.">
-        <h1>BETWEEN <br>THE<br> <span style="color: #1A1423; text-decoration: underline; ">LINES</span></h1> <br>
+        <h1>BETWEEN <br>THE<br> <span style="color: #EF626C; text-decoration: underline; ">LINES</span></h1> <br>
         <div class="quote">
             <q>The world belongs to those who read.</q>
-            <button class="btn" type="button">JOIN THE CLUB</button></div>
+            <button class="btn" type="button">JOIN THE CLUB</button>
+        </div>
     </div>
 
-    <div id="about">
+    <div id="about"> <br>
         <h2>OUR STORY</h2>
         <p>Book Club opened in July 2020 and serves as a community hub of the Upper West Side: a new kind of independent bookstore featuring top-notch coffee, wine, and gin. This spirited and dynamic neighborhood is reflected in the store: from the cozy
             living room-feel decor, to curated book inventory, locally roasted coffee, and NY state wine. Come hang out with us!</p>
@@ -60,57 +61,62 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-    <h2>EVENTS</h2>
-    <div class="container">
-        <table>
-            <thead>
-                <tr class="row">
-                    <th style="text-align: left;">Book</th>
-                    <th>Author</th>
-                    <th>Event</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src="images/redqueen.jpg" class="bookcover"></td>
-                    <td class="book-author">Victoria Aveyard</td>
-                    <td class="info">This event is free and open to the public. To join the signing line and have any books signed at this event, you must purchase a copy of either King's Cage or Rise of Fire from Parnassus Books, either in-store, over the phone, or online.
-                        Your purchase will include a ticket that will admit you into the signing line at the event. By purchasing a book from Parnassus, you are not only supporting a locally owned, independent business, but you are also showing publishers
-                        that they should continue sending authors to Parnassus. Think about it this way: You wouldn't bring your own biscuits to the Loveless Cafe, would you?</td>
-                </tr>
-                <tr>
-                    <td><img src="images/magicforliers.jpg" class="bookcover"></td>
-                    <td class="book-author"> Sarah Gailey</td>
-                    <td class="info">When a gruesome murder is discovered at The Osthorne Academy of Young Mages, where her estranged twin sister teaches Theoretical Magic, reluctant detective Ivy Gamble is pulled into the world of untold power and dangerous secrets.
-                        She will have to find a murderer and reclaim her sister—without losing herself.</td>
-                </tr>
-                <tr>
-                    <td><img src="images/mexicandaughter.jpg" class="bookcover"></td>
-                    <td class="book-author">Erika L. Sanchez</td>
-                    <td class="info">The Absolutely True Diary of a Part-Time Indian meets Jane the Virgin in this poignant but often laugh-out-loud funny contemporary YA about losing a sister and finding yourself amid the pressures, expectations, and stereotypes of growing
-                        up in a Mexican American home.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-          <div class="quote"></div>
-        <h2>Member Login</h2>
-        <div class="membership" id="members">
+    <div id="events"><br>
+        <h2>EVENTS</h2>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr class="row">
+                        <th style="text-align: left;">Book</th>
+                        <th>Author</th>
+                        <th>Event</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/redqueen.jpg" class="bookcover"></td>
+                        <td class="book-author">Victoria Aveyard</td>
+                        <td class="info">This event is free and open to the public. To join the signing line and have any books signed at this event, you must purchase a copy of either King's Cage or Rise of Fire from Parnassus Books, either in-store, over the phone,
+                            or online. Your purchase will include a ticket that will admit you into the signing line at the event. By purchasing a book from Parnassus, you are not only supporting a locally owned, independent business, but you are also
+                            showing publishers that they should continue sending authors to Parnassus. Think about it this way: You wouldn't bring your own biscuits to the Loveless Cafe, would you?</td>
+                        <td>September 27th, 2020</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/magicforliers.jpg" class="bookcover"></td>
+                        <td class="book-author"> Sarah Gailey</td>
+                        <td class="info">When a gruesome murder is discovered at The Osthorne Academy of Young Mages, where her estranged twin sister teaches Theoretical Magic, reluctant detective Ivy Gamble is pulled into the world of untold power and dangerous secrets.
+                            She will have to find a murderer and reclaim her sister—without losing herself.</td>
+                        <td>October 14, 2020</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/mexicandaughter.jpg" class="bookcover"></td>
+                        <td class="book-author">Erika L. Sanchez</td>
+                        <td class="info">The Absolutely True Diary of a Part-Time Indian meets Jane the Virgin in this poignant but often laugh-out-loud funny contemporary YA about losing a sister and finding yourself amid the pressures, expectations, and stereotypes
+                            of growing up in a Mexican American home.
+                        </td>
+                        <td>November 24, 2020</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="quote"></div>
 
+        <div class="membership" id="members">
+            <h2>Member Login</h2>
             <form>
-                <label for="username">Username:</label>
-                <input type="text" name="account" id="username">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password">
-                <label for="remember-info">Remember my account</label>
-                <input type="checkbox" name="account" id="remember-info" value="remember-info">
+                <div class="form-info">
+                    <label for="username">Username:</label>
+                    <input type="text" name="account" id="username" placeholder="username/email" required><br>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required><br>
+                    <label for="remember-info" style="font-size: 1rem;">Remember me</label>
+                    <input type="checkbox" name="account" id="remember-info" value="remember-info" style="cursor: pointer;"><br>
+                    <input type="submit" value="login" id="submit-btn">
+                </div>
             </form>
 
         </div>
-        <script src="app.js"></script>
-</body>
-
-</html>
         <script src="app.js"></script>
 </body>
 
