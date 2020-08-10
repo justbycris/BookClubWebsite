@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body,
@@ -84,20 +85,20 @@ q {
     width: 100%;
     padding: 3% 0 5% 0;
     background-color: #1A1423;
+    text-align: center;
 }
 
 .btn {
     position: relative;
-    left: 45%;
+    justify-content: center;
     background-color: #6C63FF;
     color: #ffffff;
-    border-radius: 5%;
+    border-radius: 12px;
     border: 0px solid transparent;
     font-size: 1em;
     font-weight: 600;
-    padding: .5rem 1rem;
+    padding: .5rem 1.3rem;
     margin-top: 2rem;
-    text-align: center;
     cursor: pointer;
 }
 
@@ -232,22 +233,21 @@ p {
 
 /*-----------------------------EVENTS-----------------------------*/
 
-.container {
-    width: 100%;
-    height: auto;
+table {
+    max-width: 100%;
+    min-width: 20%;
+    margin: 0 auto;
+    text-align: justify;
+    justify-content: center;
 }
 
-table {
+thead {
     text-align: left;
-    margin: 5rem 10rem;
 }
 
 .bookcover {
-    width: 150px;
-    height: auto;
-    padding: 20% 2%;
-    left: 30%;
-    margin: 5% 5%;
+    max-width: 200px;
+    min-width: 80px;
 }
 
 .book-author {
@@ -265,12 +265,12 @@ th {
 }
 
 td {
-    width: 100px;
     padding: 3rem 2rem;
 }
 
 .info {
-    width: 600px;
+    max-width: 600px;
+    min-width: 600px;
     padding: 5% 5%;
 }
 
@@ -324,25 +324,63 @@ form {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     h1 {
-        font-size: 3.5rem;
-        left: 150px;
+        font-size: 3em;
+        text-align: center;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 9rem 1rem 3rem 1rem;
     }
     .hero-home {
         display: none;
+    }
+    q {
+        font-size: 1.1em;
+    }
+    .btn {
+        left: 30%;
+        font-size: 1em;
+    }
+    .quote {
+        padding-top: 4%;
+        padding-bottom: 10%;
+    }
+    h2 {
+        font-size: 2em;
+        margin: 13% 0 10% 0;
+    }
+    p {
+        font-size: 1em;
+        line-height: 1.5rem;
+    }
+    .aboutimg {
+        width: 45%;
+        left: 27%;
+        margin-top: 12%;
+        margin-bottom: 12%;
+    }
+    .mySlides {
+        padding: 2rem 2rem;
+    }
+    .container {
+        width: 70%;
     }
 }
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .hero-home {
+        margin-left: 15rem;
+        position: relative;
+        top: 25rem;
+    }
+    h1 {
+        position: relative;
+        top: -15rem;
+    }
+    .btn {
+        display: inline-flex;
+        margin: 2 auto;
+    }
+}
 
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 769px) and (max-width: 1024) {}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
