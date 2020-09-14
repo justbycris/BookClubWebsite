@@ -1,3 +1,4 @@
+
 //--------------------------QUOTES SLIDE--------------------------//
 
 var slideIndex = 1;
@@ -25,4 +26,15 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+}
+
+//Form Validation
+function validateForm() {
+    var x = document.forms["loginForm"]["username"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    } else if (x = true) {
+        return true;
+    }
 }
