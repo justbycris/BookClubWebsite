@@ -102,12 +102,12 @@
 
     <div class="membership" id="members">
         <h2>Member Login</h2>
-        <form>
+        <form name="loginForm" onsubmit="validateForm()">
             <label for="username">Username:</label>
             <input type="text" name="account" id="username" placeholder="username/email" required><br>
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" required><br>
-            <label for="remember-info" style="font-size: 1rem;">Remember me</label>
+            <label for="remember-info" style="font-size: 1rem;"></label>Remember Me
             <input type="checkbox" name="account" id="remember-info" value="remember-info" style="cursor: pointer;"><br>
             <input type="submit" value="login" id="submit-btn">
         </form>
