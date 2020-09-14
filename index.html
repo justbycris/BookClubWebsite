@@ -11,28 +11,26 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#members">Member Login</a></li>
+            <li><a href="#members">Members</a></li>
         </ul>
     </nav>
 </head>
 
 <body>
-
-    <div class="container-top" id="home">
-        <img class="hero-home" src="images/undraw_book_lover_mkck.svg" alt="Photo of open books.">
-        <h1>BETWEEN <br>THE<br> <span style="color: #EF626C; text-decoration: underline; ">LINES</span></h1> <br>
-        <div class="quote">
-            <q>The world belongs to those who read.</q>
-            <button class="btn" type="button"><a href="#members" style="text-decoration: none; color: white;">JOIN THE CLUB</a></button>
-        </div>
+    <section class="container-top" id="home">
+        <h1>BETWEEN <br>THE<br> <span style="color: #EF626C; text-decoration: underline; ">LINES</span></h1>
+        <img class="homeimg" src="images/undraw_book_lover_mkck.svg" alt="Photo of open books.">
+    </section>
+    <div class="quote">
+        <q>The world belongs to those who read.</q>
+        <button type="button"><a href="#members" style="text-decoration: none; color: white;">JOIN THE CLUB</a></button>
     </div>
-
-    <div id="about"> <br>
+    <section id="about"> <br>
         <h2>OUR STORY</h2>
         <p>Book Club opened in July 2020 and serves as a community hub of the Upper West Side: a new kind of independent bookstore featuring top-notch coffee, wine, and gin. This spirited and dynamic neighborhood is reflected in the store: from the cozy
             living room-feel decor, to curated book inventory, locally roasted coffee, and NY state wine. Come hang out with us!</p>
         <img class="aboutimg" src="images/about.svg" alt="book illustration">
-    </div>
+    </section>
 
     <div class="slideshow-container">
 
@@ -61,9 +59,9 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-    <div id="events"><br>
+    <section id="events"><br>
         <h2>EVENTS</h2>
-        <div style="overflow-x: auto;">
+        <div style="overflow-x: auto; overflow-y: hidden;">
             <table>
                 <thead>
                     <tr class="row">
@@ -99,25 +97,23 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div class="quote"></div>
+    </section>
+    <div class="quote" style="padding: 80px;"></div>
 
-        <div class="membership" id="members">
-            <h2>Member Login</h2>
-            <form>
-                <div class="form-info">
-                    <label for="username">Username:</label>
-                    <input type="text" name="account" id="username" placeholder="username/email" required><br>
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" required><br>
-                    <label for="remember-info" style="font-size: 1rem;">Remember me</label>
-                    <input type="checkbox" name="account" id="remember-info" value="remember-info" style="cursor: pointer;"><br>
-                    <input type="submit" value="login" id="submit-btn">
-                </div>
-            </form>
+    <div class="membership" id="members">
+        <h2>Member Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" name="account" id="username" placeholder="username/email" required><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required><br>
+            <label for="remember-info" style="font-size: 1rem;">Remember me</label>
+            <input type="checkbox" name="account" id="remember-info" value="remember-info" style="cursor: pointer;"><br>
+            <input type="submit" value="login" id="submit-btn">
+        </form>
 
-        </div>
-        <script src="app.js"></script>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
