@@ -288,24 +288,26 @@ td {
 
 form {
     position: relative;
-    margin: 100px auto;
-    text-align: center;
-    line-height: 2em;
-    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    min-width: 50%;
     background-color: #EF626C;
     border: 15px solid #6C63FF;
     border-radius: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-    color: #1A1423;
     padding: 40px 40px;
-    min-width: calc(5rem + 40vw);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #1e1e1e;
+    font-weight: bold;
 }
 
 input {
-    min-width: 50%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    width: 55%;
+    min-width: 100px;
+    margin: 10px auto;
+    padding: 5px 0;
     outline: none;
 }
 
@@ -333,7 +335,7 @@ input {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .container-top {
         height: 80vh;
     }
@@ -375,6 +377,20 @@ input {
     }
     .container {
         width: 70%;
+    }
+    form {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 957px) {
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .homeimg {
+        width: 50%;
+        margin: 50px auto;
     }
 }
 
