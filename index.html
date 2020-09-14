@@ -103,12 +103,18 @@
     <div class="membership" id="members">
         <h2>Member Login</h2>
         <form name="loginForm" onsubmit="validateForm()">
-            <label for="username">USERNAME:</label>
-            <input type="text" name="account" id="username" placeholder="username/email" required><br>
-            <label for="password">PASSWORD:</label>
-            <input type="password" name="password" id="password" required><br>
-            <label for="remember-info" style="font-size: 1rem;"></label>Remember Me
-            <input type="checkbox" name="account" id="remember-info" value="remember-info" style="cursor: pointer;"><br>
+            <div class="group">
+                <label for="username">USERNAME:</label>
+                <input type="text" name="account" id="username" placeholder="username/email" required>
+            </div>
+            <div class="group">
+                <label for="password">PASSWORD:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="group">
+                <label for="remember-info" style="font-size: 1rem;"></label>Remember Me
+                <input type="checkbox" name="account" id="remember-info" value="remember-info" style="cursor: pointer;">
+            </div>
             <input type="submit" value="login" id="submit-btn">
         </form>
 
