@@ -16,28 +16,27 @@ html {
 
 .navbar {
     position: fixed;
-    display: inline-block;
+    display: flex;
     width: 100vw;
     text-align: center;
+    justify-content: center;
     background-color: #1A1423;
     list-style-type: none;
     z-index: 5;
 }
 
 .navbar li {
-    padding: 15px 25px;
-    display: inline-block;
+    padding: 30px 30px;
+    display: inline;
 }
 
 .navbar a {
-    display: inline-block;
-    color: #ffffff;
+    color: #aaa;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: calc(10px + .5vw);
     text-transform: uppercase;
     font-weight: 500;
-    width: 100%;
 }
 
 .navbar a:hover {
@@ -48,56 +47,58 @@ html {
 /*-----------------TOP---------------*/
 
 .container-top {
-    width: 100vw;
-    height: auto;
-}
-
-.hero-home {
-    float: left;
-    width: 40%;
-    height: auto;
-    top: 40%;
-    margin: 11rem 0 6rem 10rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin-top: 150px;
+    height: 90vh;
 }
 
 h1 {
-    font-size: 4.3em;
+    display: inline-block;
+    font-size: 85px;
     font-weight: 800;
     color: #1e1e1e;
-    text-align: right;
-    padding: 15rem 15rem 7rem 0;
+    text-align: left;
+    margin-left: 5vw;
+}
+
+.homeimg {
+    display: block;
+    width: 45%;
+    margin-right: 5vw;
 }
 
 q {
     position: relative;
     display: block;
     width: 100%;
-    margin-top: 1rem;
-    font-size: 2em;
+    font-size: calc(14px + 1vw);
     color: #ffffff;
     font-style: italic;
     text-align: center;
+    padding: 0 25px;
 }
 
 .quote {
-    clear: both;
+    position: relative;
     height: auto;
     width: 100%;
-    padding: 3% 0 5% 0;
+    padding: 50px 0;
     background-color: #1A1423;
     text-align: center;
 }
 
-.btn {
+button {
     position: relative;
-    justify-content: center;
     background-color: #6C63FF;
     color: #ffffff;
-    border-radius: 12px;
+    border-radius: 25px;
     border: 0px solid transparent;
     font-size: 1em;
     font-weight: 600;
-    padding: .5rem 1.3rem;
+    padding: 15px 40px;
     margin-top: 2rem;
     cursor: pointer;
 }
@@ -279,29 +280,37 @@ td {
 
 .membership {
     position: relative;
-    width: 90%;
+    height: 100vh;
     display: block;
     margin: auto;
+    padding-top: 20px;
 }
 
 form {
-    position: absolute;
-    top: 100px;
-    left: 20%;
-    margin: 2rem 0 6rem 0;
+    position: relative;
+    margin: 100px auto;
     text-align: center;
     line-height: 2em;
-    width: 60%;
-    background-color: #6C63FF;
+    width: 50vw;
+    background-color: #EF626C;
+    border: 15px solid #6C63FF;
+    border-radius: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
     color: #1A1423;
+    padding: 40px 40px;
+    min-width: calc(5rem + 40vw);
 }
 
-.form-info {
-    padding: 2rem 1rem;
-    margin: 1rem 1rem;
-    background-color: #EF626C;
+#remember-info {
+    width: 20px;
+    background-color: blue;
+}
+
+input {
+    min-width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #submit-btn {
@@ -309,11 +318,12 @@ form {
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     background-color: #6C63FF;
-    border-radius: 5%;
+    border-radius: 25px;
     border: 4px solid #6C63FF;
     padding: .2em 2em;
     margin-top: 5%;
     cursor: pointer;
+    outline: none;
 }
 
 
@@ -323,14 +333,20 @@ form {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    h1 {
-        font-size: 3em;
-        text-align: center;
-        padding: 1rem 1rem 1rem 1rem;
-        margin: 9rem 1rem 3rem 1rem;
+    .container-top {
+        height: 80vh;
     }
-    .hero-home {
-        display: none;
+    h1 {
+        font-size: 3.5em;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .homeimg {
+        margin-top: -250px;
+    }
+    .navbar li {
+        padding: 30px 15px;
+        display: inline;
     }
     q {
         font-size: 1.1em;
@@ -338,10 +354,6 @@ form {
     .btn {
         left: 30%;
         font-size: 1em;
-    }
-    .quote {
-        padding-top: 4%;
-        padding-bottom: 10%;
     }
     h2 {
         font-size: 2em;
@@ -365,22 +377,14 @@ form {
     }
 }
 
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .hero-home {
-        margin-left: 15rem;
-        position: relative;
-        top: 25rem;
-    }
+@media screen and (min-width: 320px) and (max-width: 957px) {
     h1 {
-        position: relative;
-        top: -15rem;
+        text-align: center;
+        margin: 0 auto;
     }
-    .btn {
-        display: inline-flex;
-        margin: 2 auto;
+    .homeimg {
+        width: 50%;
+        margin: 50px auto;
     }
 }
 
