@@ -302,15 +302,11 @@ form {
     min-width: calc(5rem + 40vw);
 }
 
-#remember-info {
-    width: 20px;
-    background-color: blue;
-}
-
 input {
     min-width: 50%;
     padding-top: 5px;
     padding-bottom: 5px;
+    outline: none;
 }
 
 #submit-btn {
@@ -324,6 +320,11 @@ input {
     margin-top: 5%;
     cursor: pointer;
     outline: none;
+}
+
+#remember-info {
+    width: 100%;
+    padding: 0;
 }
 
 
